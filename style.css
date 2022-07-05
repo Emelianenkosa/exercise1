@@ -1,0 +1,299 @@
+/*
+@font-face {
+    font-family: 'Golos Text';
+    src: local('Golos Text Regular'), local('GolosText-Regular'), url('/fonts/Golostextregular.woff2') format('woff2'), url('/fonts/Golostextregular.woff') format('woff'), url('/fonts/Golostextregular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Golos Text';
+    src: local('Golos Text DemiBold'), local('GolosText-DemiBold'), url('/fonts/Golostextdemibold.woff2') format('woff2'), url('/fonts/Golostextdemibold.woff') format('woff'), url('/fonts/Golostextdemibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal; 
+    11111
+*/
+body {
+    width: 1348px;
+    height: 1282px;         
+    padding: 0;
+    margin: 0;
+    font-family: 'Golos Text';
+    font-size: 14px;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.page-nav {
+    width: 230px;
+    height: 1282px;
+    background-color: #F3F3F3;
+}
+.page-nav .logo {
+    width: 123px;
+    height: 32px;
+    margin-top: 16px;
+    margin-left: 16px; 
+}
+.page-nav .logo span {
+    font-size: 22px;
+    font-weight: 900;
+    vertical-align: middle;
+    margin-left: 9px;
+}
+.page-nav img {
+    vertical-align: middle;
+}
+
+.page-nav .main-nav {
+    list-style: none;
+    margin: 28px 12px 0px 12px;
+    padding: 0px;
+}
+
+.page-nav .main-nav li {
+    height: 40px;
+}
+.page-nav .main-nav li:first-child {
+    background-color: #E8E8E8;
+    border-radius: 8px;
+}
+.page-nav .main-nav a {
+    text-decoration: none;
+    opacity: 0.4;
+    line-height: 40px;
+    margin-left: 14.5px;
+}
+.page-nav .main-nav img {
+   vertical-align: middle;
+   margin-left: 12px;
+}
+.btn-feedback {
+    display: inline-block;
+    height: 40px;
+    width: 177px;
+    border: 1px solid #D5D5D5;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+    text-color: #000000;
+    opacity: 54%;
+    margin-left: 24px;
+    margin-top: 510px;
+}
+.btn-feedback img {
+    margin-right: 10px;
+}
+
+.page-main {
+    width: auto;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+}
+.page-main .header {
+    height: 64px;
+    width: 1118px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #E8E8E8;
+}
+.page-main .header a {
+    color:#2C3030;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.page-main .header a img {
+    margin-right: 16px;
+    margin-left: 28px;
+}
+.page-main .header .profile {
+    height: 36px;
+    width: 185px;
+    margin: 0px;
+    padding: 0px;
+    margin-right: 24px;
+}
+.page-main .header .profile p {
+    margin: 0px;
+    padding: 0px;
+}
+.page-main .header .profile img {
+    margin: 0px;
+    margin-left: 9px;
+    padding: 0px;
+}
+.page-main .header .profile .email {
+   align-self: center;
+   color: #2C3030;
+   font-size: 14px;
+   margin-left: 30px;
+}
+.page-main .header .profile .name {
+    color: #9A9C9C;
+    font-size: 12px;
+}
+
+.content {
+    display: flex;
+}
+
+.content .content-day .day {
+    color: #2C3030;
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 90%;
+    margin-left: 24px;
+}
+.week-day {
+    color: #9A9C9C;
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 90%;
+}
+
+.content .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 24px;
+}
+.content .cards-container .card {
+    width: 255px;
+    height: 137px;
+    border: 1px solid #E3E1E1;
+    border-radius: 10px;
+    margin: 0px 16px 16px 0px; 
+    position: relative;
+}
+.card .edit {
+    position: absolute; 
+    border: 1px solid #E3E1E1;
+    border-radius: 2px;
+    box-shadow: 0px 1px 18px rgba(0, 0, 0, 0.12);
+    width: 156px;
+    height: 64px;
+    background: #FFFFFF;
+    color: #9A9C9C;
+    font-size: 14px;
+    text-align: center;
+    right: -10px;
+    top: 20px;
+}
+.card .edit img {
+    margin-right: 14px; 
+}
+.card .edit p {
+    margin-top: 9px; 
+    margin-bottom: 10px;
+}
+.content .cards-container .card-add {
+    border: 1px dashed #E0E0E0;
+    font-size: 14px;
+    color: #9A9C9C;
+    text-align: center;
+    line-height: 137px;
+}
+.content .cards-container .card-add span {
+    margin-left: 15px;
+}
+.content .cards-container .card .card-container {
+    display: flex;
+    flex-direction: column;
+    width: 215px;
+    height: 97px;
+    margin: 20px auto;
+    color: #9A9C9C;
+    font-size: 12px;
+    font-weight: 400;
+    position: relative;
+}
+.cards-container .card .card-container .card-top {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.cards-container .card .card-container .card-top span {
+    margin-right: 15px;
+}
+.status-fulfill {
+    border: 0.5px solid #52C41A;
+    border-radius: 4px;
+    color: #52C41A;
+    background-color: rgba(82, 196, 26, 0.08);
+    text-align: center;
+    line-height: 19px;
+    margin-bottom: 9px;
+    padding: 0px 5px;
+}
+.status-refusal {
+    border: 0.5px solid #E91E63;
+    border-radius: 4px;
+    color: #E91E63;
+    background-color: rgba(233, 30, 99, 0.08);
+    text-align: center;
+    line-height: 19px;
+    margin-bottom: 9px;
+    padding: 0px 5px;
+} 
+.status-appointed {
+    border: 0.5px solid #096DD9;
+    border-radius: 4px;
+    color: #096DD9;
+    background-color: rgba(33, 150, 243, 0.08);
+    text-align: center;
+    line-height: 19px;
+    margin-bottom: 9px;
+    padding: 0px 5px;
+}
+.status-free {
+    border: 0.5px solid #9A9C9C;
+    border-radius: 4px;
+    color: #9A9C9C;
+    background-color: rgba(154, 156, 156, 0.08);
+    text-align: center;
+    line-height: 19px;
+    margin-bottom: 9px;
+    padding: 0px 5px;
+}
+.status-report {
+    border: 0.5px solid #FF8A00;
+    border-radius: 4px;
+    color: #FF8A00;
+    background-color: rgba(255, 138, 0, 0.08);
+    text-align: center;
+    line-height: 19px;
+    margin-bottom: 9px;
+    padding: 0px 5px;
+}
+.cards-container .card .card-container .description {
+    color: #2C3030;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+}
+.cards-container .card .card-container .chekingman {
+    margin-top: auto;
+    padding-left: 20px;
+}
+.cards-container .card .card-container .chekingman::before {
+   position: absolute; 
+   content: "";
+   width: 12px;
+   height: 12px;
+   background: url("img/man.png") no-repeat;
+   top: 83px;
+   left: 0px;
+   opacity: 0.6;
+}
+.hand {
+    position:absolute;
+    top: 138px;
+    left: 735px;
+}
